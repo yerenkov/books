@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&family=Raleway:wght@300;400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: #222;
+}
+
+#cont {
+  padding: 10px 10px 40px;
+  max-width: 600px;
+  margin: auto;
+  cursor: pointer;
+}
+#cont p {
+  display: inline;
+}
+
+.selectedSpan {
+  background-color: rgba(73, 177, 73, 0.4);
+}
+
+#menuBtn {
+  border: none;
+  width: 40px;
+  height: 40px;
+  background: radial-gradient(circle, rgba(73, 177, 73, 0.4) 45%, rgba(253, 187, 45, 0) 50%);
+  border-radius: 100px;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  z-index: 20;
+  cursor: pointer;
+}
+
+.menuBtnSelected {
+  background: radial-gradient(circle, rgba(177, 94, 73, 0.4) 45%, rgba(253, 187, 45, 0) 50%) !important;
+}
+
+#menu {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 0 40px;
+  display: flex;
+  background: rgba(255, 255, 255, 0.8666666667);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  transform: translateY(100%) scale(0.96);
+  transition: 0.3s;
+  opacity: 0;
+  border-radius: 100px;
+  border-top: 1px solid rgba(0, 0, 0, 0);
+  flex-wrap: wrap;
+  z-index: 15;
+}
+#menu.menuSelected {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0px;
+  opacity: 1;
+  transform: none;
+}
+#menu button {
+  border: none;
+  background: rgba(255, 255, 255, 0);
+  padding: 0 20px;
+  line-height: 40px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+#menu button:hover {
+  opacity: 1;
+}
+
+#learn {
+  background: rgba(255, 255, 255, 0.8666666667);
+  position: fixed;
+  top: 0;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+#learn.learnSelected {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+form {
+  max-width: 400px;
+  margin: auto;
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+form input {
+  outline-color: #d2e8ed;
+  border: 1px solid #bbb;
+  height: 24px;
+  font-family: "Nunito", sans-serif;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: #fff;
+  padding: 0 5px;
+}
+form input:disabled {
+  opacity: 0.5;
+}
+form button {
+  font-family: "Nunito", sans-serif;
+  cursor: pointer;
+  outline-color: #d2e8ed;
+  height: 40px;
+  border-radius: 50px;
+  padding: 0 20px;
+  border: none;
+  background-color: aliceblue;
+  transition: 0.3s;
+}
+form button:hover {
+  background-color: #dbeeff;
+}
+form #score {
+  text-align: center;
+}
+form p {
+  margin: 15px 0;
+}
+
+.red {
+  color: #b57171c7c;
+}
+
+.green {
+  color: green;
+}/*# sourceMappingURL=style.css.map */
